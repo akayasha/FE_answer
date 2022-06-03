@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="home.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="home.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>                                                  
+  
+    <title>Pricing</title>
+</head>
+<body class="pricing">
+    <div class="headers">
+        <h1>Simple Pricing !</h1>
+        <p class="tagline">The most advanced customer support tools with a simple <br />
+            and affordable Pricing. And you can always try for 30 days.
+            Free !!!
+        </p>
+
+    </div>
+    <div class="container ">
+        <div class="row" style="justify-content: space-between;">
+            <div class="col">
+            <div class="card">
+                <div class="card-header" style="background-color: #3c4252;">
+                    <h4 class="menu">BASIC</h4>
+                </div>
+                <div class="card-body">
+                    <div class="generic_price_tag clearfix">  
+                        <span class="price">
+                            <span class="sign">$</span>
+                            <span class="currency">4</span>
+                            <span class="month">/month</span>
+                        </span>
+                    </div> 
+                    <hr/>
+                    <p>10 project</p> 
+                    <p>10 Pages</p>
+                    <p>100 Mb Disk Spaces </p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="button" onclick="buy()" class="btn btn-primary ">Buy Now</button>
+                        <a href="#" type="button" class="stretched-link" data-bs-container="body" data-bs-toggle="popover"  data-bs-content="Card is Selected" ></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                        <div class="card-header" style="background-color: #3c4252;">
+                            <span class="offer">
+                            <span class="disc"><h4 class="menu">STANDARD</h4></span>
+                            <span class="nominal"><p>Save 15%</p></span>
+                            </span>
+                         </div>
+                        <div class="card-body">
+                            <div class="generic_price_tag clearfix">  
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">8</span>
+                                    <span class="month">/month</span>
+                                </span>
+                            </div> 
+                            <hr/>
+                            <p>20 Project</p>
+                            <p>20 Pages</p>
+                            <p>200 Mb Disk Spaces</p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button type="button" onclick="buy()" class="btn btn-primary ">Buy Now</button>
+                                <a href="#" type="button" class="stretched-link" data-bs-container="body" data-bs-toggle="popover"  data-bs-content="Card is Selected" ></a>
+
+                           </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                   <div class="card-header" style="background-color: #3c4252;">
+                       <h4 class="menu">ADVANCED</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="generic_price_tag clearfix">  
+                            <span class="price">
+                                <span class="sign">$</span>
+                                <span class="currency">12</span>
+                                <span class="month">/month</span>
+                            </span>
+                            <hr />
+                        <p>40 Project</p>
+                        <p>40 Pages</p>
+                        <p>500 Mb Disk Spaces</p>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="button" onclick="buy()" class="btn btn-primary ">Buy Now</button>
+                        <a href="#" type="button" class="stretched-link" data-bs-container="body" data-bs-toggle="popover"  data-bs-content="Card is Selected" ></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="footer" >
+    <div class="row">
+        <h3>Frequently Asked Questions</h3>
+        <div class="col">
+            <h5>How does free trial works</h5>
+            <p class="faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis debitis, voluptate id sunt aspernatur sit ipsam commodi sequi labore quibusdam placeat, sapiente harum laborum ea fugit, excepturi eius. Est.</p>
+        </div>  
+        <div class="col">
+            <h5 >Can i cancel anytime</h5>
+            <p class="faq">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium sint omnis at quos libero assumenda accusantium quidem similique? Facilis, maiores non error officiis ullam maxime quam aliquid molestiae sapiente distinctio.</p>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+</html>
